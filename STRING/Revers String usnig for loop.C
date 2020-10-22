@@ -1,0 +1,25 @@
+//program for revers dtring in using for loop
+#include<stdio.h>
+#include<conio.h>
+ int main()
+{
+    char cSrc[20]="";
+    char cDest[20]="";
+    int i=0,j=0;
+
+    printf("\n Enter your city name = ");
+    gets(cSrc);
+
+    for(i=0;cSrc[i]!='\0';i++);
+
+    for(j=0,i=i-1;i>=0;i--,j++)
+    {
+        cDest[j]=cSrc[i];
+    }
+    cDest[j]='\0';
+
+    printf("\n New string after reversal = %s.",cDest);
+
+    getch();
+    return 0;
+}
